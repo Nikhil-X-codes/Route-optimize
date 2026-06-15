@@ -1,0 +1,21 @@
+# Data files
+data/
+*.pbf
+*.csv
+*.h5
+
+# Generated OSRM files
+*.osrm
+*.osrm.*
+
+# Model files (optional — see below)
+models/*.json
+
+# Node modules
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
