@@ -2,8 +2,4 @@ fastapi
 uvicorn
 requests
 ortools
-numpy
-xgboost
-pandas
-scikit-learn
 pydantic
