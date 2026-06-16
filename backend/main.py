@@ -4,7 +4,11 @@ from pydantic import BaseModel
 from typing import List, Optional
 from datetime import datetime
 import math
+import sys
 import os
+
+# Add backend directory to path for imports
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from osrm_client import get_travel_time, get_distance_matrix
 from or_tools_solver import solve_tsp
