@@ -41,9 +41,15 @@ class OptimizeResponse(BaseModel):
     message: str
 
 # ============================================
-# HEALTH CHECK ENDPOINT
+# ROOT + HEALTH CHECK ENDPOINTS
 # ============================================
 
+@app.get("/")
+@app.head("/")
+def root():
+    return {"status": "ok", "service": "route-optimizer-api"}
+
+@app.get("/health")
 @app.get("/api/health")
 def health_check():
     return {
